@@ -75,7 +75,8 @@ blfCANMessageFromVBLCANMessage (canMessage_t* canMessage,
 }
 
 static void
-blfVBLCANMessageParseTime(const VBLCANMessage* message, time_t *sec,
+//blfVBLCANMessageParseTime(const VBLCANMessage* message, time_t *sec,
+blfVBLCANMessageParseTime(const VBLCANMessage* message, uint32 *sec,
                           uint32 *nsec)
 {
   const uint64_t C_1E9  = 1000000000ULL;

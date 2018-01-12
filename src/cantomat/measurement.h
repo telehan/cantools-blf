@@ -30,7 +30,8 @@
 /* CAN message type */
 typedef struct {
   struct {
-    time_t tv_sec;
+    //time_t tv_sec;
+    uint32 tv_sec;
     uint32 tv_nsec;
   } t; /* time stamp */
   uint8   bus;     /* can bus */
